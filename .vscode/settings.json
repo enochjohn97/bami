@@ -1,5 +1,8 @@
 {
-    "editor.formatOnSave": true,
-    "files.autoSave": "afterDelay",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true
 }
