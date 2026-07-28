@@ -20,17 +20,15 @@
     <header id="siteHeader">
       <div class="container">
         <a href="#top" class="brand">
-          <svg class="brand-mark" viewBox="0 0 48 48" fill="none">
-            <circle cx="24" cy="24" r="22" stroke="#0E3A2B" stroke-width="2" />
-            <path
-              d="M24 34C24 34 24 22 24 16C24 16 15 18 14 27C14 27 20 29 24 22"
-              fill="#0E3A2B"
-            />
-            <path
-              d="M24 22C28 29 34 27 34 27C33 18 24 16 24 16"
-              fill="#0E3A2B"
-            />
-          </svg>
+          <img
+            src="img/logo.jpeg"
+            alt="BAMI logo"
+            class="brand-mark"
+            style="
+              background-color: transparent !important;
+              border-radius: 20px !important;
+            "
+          />
           <span class="brand-text">
             <span class="name">BAMI</span>
             <span class="sub">Investments Limited</span>
@@ -426,8 +424,8 @@
             <div class="eyebrow">Our Palm Variety</div>
             <h2>Bami</h2>
             <p style="margin-top: 14px; color: var(--ink-700); max-width: 48ch">
-              We cultivate the premium Bami oil palm hybrid, known for its
-              high oil yield, disease resistance, and adaptability.
+              We cultivate the premium Bami oil palm hybrid, known for its high
+              oil yield, disease resistance, and adaptability.
             </p>
             <ul class="check-list">
               <li>
@@ -748,42 +746,88 @@
               <div class="input-group">
                 <label for="treeCount">Number of mature Bami palms</label>
                 <div class="input-row">
-                  <input type="range" id="treeCount" min="10" max="500" value="53" step="1" />
+                  <input
+                    type="range"
+                    id="treeCount"
+                    min="10"
+                    max="500"
+                    value="53"
+                    step="1"
+                  />
                   <span class="input-value" id="treeCountVal">53</span>
                 </div>
               </div>
               <div class="input-group">
                 <label for="bunchesPerTree">Bunches per tree / year</label>
                 <div class="input-row">
-                  <input type="range" id="bunchesPerTree" min="10" max="25" value="20" step="1" />
+                  <input
+                    type="range"
+                    id="bunchesPerTree"
+                    min="10"
+                    max="25"
+                    value="20"
+                    step="1"
+                  />
                   <span class="input-value" id="bunchesPerTreeVal">20</span>
                 </div>
               </div>
               <div class="input-group">
                 <label for="bunchWeight">Average bunch weight (kg)</label>
                 <div class="input-row">
-                  <input type="range" id="bunchWeight" min="15" max="30" value="20" step="1" />
+                  <input
+                    type="range"
+                    id="bunchWeight"
+                    min="15"
+                    max="30"
+                    value="20"
+                    step="1"
+                  />
                   <span class="input-value" id="bunchWeightVal">20</span>
                 </div>
               </div>
               <div class="input-group">
                 <label for="extractionRate">Oil extraction rate (%)</label>
                 <div class="input-row">
-                  <input type="range" id="extractionRate" min="18" max="22" value="20" step="0.5" />
+                  <input
+                    type="range"
+                    id="extractionRate"
+                    min="18"
+                    max="22"
+                    value="20"
+                    step="0.5"
+                  />
                   <span class="input-value" id="extractionRateVal">20</span>
                 </div>
               </div>
               <div class="input-group">
                 <label for="pricePerGallon">Price per 20L gallon (₦)</label>
                 <div class="input-row">
-                  <input type="range" id="pricePerGallon" min="35000" max="75000" value="55000" step="1000" />
-                  <span class="input-value" id="pricePerGallonVal">₦55,000</span>
+                  <input
+                    type="range"
+                    id="pricePerGallon"
+                    min="35000"
+                    max="75000"
+                    value="55000"
+                    step="1000"
+                  />
+                  <span class="input-value" id="pricePerGallonVal"
+                    >₦55,000</span
+                  >
                 </div>
               </div>
               <div class="input-group">
-                <label for="costPerTree">Annual operating cost per tree (₦)</label>
+                <label for="costPerTree"
+                  >Annual operating cost per tree (₦)</label
+                >
                 <div class="input-row">
-                  <input type="range" id="costPerTree" min="12000" max="30000" value="18000" step="500" />
+                  <input
+                    type="range"
+                    id="costPerTree"
+                    min="12000"
+                    max="30000"
+                    value="18000"
+                    step="500"
+                  />
                   <span class="input-value" id="costPerTreeVal">₦18,000</span>
                 </div>
               </div>
@@ -791,7 +835,9 @@
 
             <div class="calc-results">
               <div class="result-card">
-                <div class="result-eyebrow">ANNUAL FIGURES (PEAK PRODUCTION)</div>
+                <div class="result-eyebrow">
+                  ANNUAL FIGURES (PEAK PRODUCTION)
+                </div>
                 <div class="result-grid">
                   <div class="result-item">
                     <div class="result-value" id="ffbTotal">21.2</div>
@@ -819,8 +865,10 @@
                   </div>
                 </div>
                 <div class="note">
-                  * First harvest usually begins in year 4–5. Full peak yield reached by year 7–8 and sustained for 18+ years.
-                  Actual results may vary based on management, climate and market conditions.
+                  * First harvest usually begins in year 4–5. Full peak yield
+                  reached by year 7–8 and sustained for 18+ years. Actual
+                  results may vary based on management, climate and market
+                  conditions.
                 </div>
               </div>
             </div>
@@ -861,41 +909,105 @@
       </section>
     </main>
 
-   <footer>
-    <div class="container">
+    <footer>
+      <div class="container">
         <div class="fbrand">
-            <svg class="brand-mark" viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="22" stroke="#fff" stroke-width="2" />
-                <path d="M24 34C24 34 24 22 24 16C24 16 15 18 14 27C14 27 20 29 24 22" fill="#fff" />
-                <path d="M24 22C28 29 34 27 34 27C33 18 24 16 24 16" fill="#fff" />
-            </svg>
-            <span>BAMI Investments Limited</span>
+          <img
+            src="img/logo.jpeg"
+            alt="BAMI logo"
+            class="brand-mark"
+            style="
+              background-color: transparent !important;
+              border-radius: 20px !important;
+            "
+          />
+          <span>BAMI Investments Limited</span>
         </div>
         <div class="fmid">Investment Prospectus 2026</div>
         <div class="ftag">Building Wealth. Growing Legacies.</div>
         <div class="fsocial">
-            <a href="https://wa.me/2341234567890" aria-label="WhatsApp" class="social-icon" target="_blank" rel="noopener noreferrer">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                    <path d="M9 10h.01M15 10h.01" stroke-width="2" stroke="currentColor" fill="currentColor" />
-                    <path d="M9 14c.7.9 2 1.5 3 1.5s2.3-.6 3-1.5" />
-                </svg>
-            </a>
-            <a href="https://instagram.com/bamiinvestments" aria-label="Instagram" class="social-icon" target="_blank" rel="noopener noreferrer">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                    <circle cx="12" cy="12" r="5" />
-                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
-                </svg>
-            </a>
-            <a href="https://facebook.com/bamiinvestments" aria-label="Facebook" class="social-icon" target="_blank" rel="noopener noreferrer">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
-            </a>
+          <a
+            href="https://wa.me/2341234567890"
+            aria-label="WhatsApp"
+            class="social-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+              />
+              <path
+                d="M9 10h.01M15 10h.01"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="currentColor"
+              />
+              <path d="M9 14c.7.9 2 1.5 3 1.5s2.3-.6 3-1.5" />
+            </svg>
+          </a>
+          <a
+            href="https://instagram.com/bamiinvestments"
+            aria-label="Instagram"
+            class="social-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1.5"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://facebook.com/bamiinvestments"
+            aria-label="Facebook"
+            class="social-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <button class="to-top" id="toTop" aria-label="Back to top">
       <svg
