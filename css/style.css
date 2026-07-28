@@ -211,7 +211,7 @@ nav.primary-nav a:hover::after {
   width: 100%;
 }
 
-/* ---------- CTA Button (fixed centering) ---------- */
+/* ---------- CTA Button ---------- */
 .cta-btn {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -219,16 +219,16 @@ nav.primary-nav a:hover::after {
   background: var(--forest-800);
   color: var(--cream-50);
   border: none;
-  padding: 12px 26px; /* comfortable horizontal padding */
-  min-width: 180px; /* keeps button visually balanced */
-  height: auto; /* adapts to content */
-  white-space: nowrap; /* prevents text from wrapping */
+  padding: 12px 26px;
+  min-width: 180px;
+  height: auto;
+  white-space: nowrap;
   border-radius: 999px;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* text + icon are perfectly centered */
+  justify-content: center;
   gap: 8px;
   transition:
     transform 0.35s var(--ease),
@@ -679,7 +679,7 @@ section.pad {
     background 0.4s var(--ease),
     border-color 0.4s var(--ease),
     transform 0.4s var(--ease);
-  cursor: pointer; /* clickable to set white background */
+  cursor: pointer;
 }
 .journey-stage .yr {
   font-family: "IBM Plex Mono", monospace;
@@ -743,6 +743,134 @@ section.pad {
   font-size: 0.76rem;
   color: rgba(251, 248, 240, 0.6);
   margin-top: 6px;
+}
+
+/* ---------- Projected Returns Calculator ---------- */
+.returns {
+  background: var(--cream-50);
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.calc-inputs {
+  background: var(--cream-100);
+  border-radius: 20px;
+  padding: 32px 28px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-700);
+  margin-bottom: 10px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.input-row input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 6px;
+  background: var(--cream-200);
+  border-radius: 3px;
+  outline: none;
+}
+
+.input-row input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  background: var(--forest-800);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.input-row input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.input-value {
+  min-width: 90px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: var(--forest-800);
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.calc-results {
+  position: sticky;
+  top: 110px;
+}
+
+.result-card {
+  background: var(--forest-800);
+  color: var(--cream-50);
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: var(--shadow-lg);
+}
+
+.result-eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-400);
+  margin-bottom: 28px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 20px;
+}
+
+.result-item {
+  text-align: center;
+}
+
+.result-value {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--cream-50);
+}
+
+.result-label {
+  font-size: 0.78rem;
+  color: rgba(251, 248, 240, 0.6);
+  margin-top: 4px;
+}
+
+.result-item.accent .result-value {
+  color: var(--gold-400);
+  font-size: 2.2rem;
+}
+
+.note {
+  margin-top: 28px;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: rgba(251, 248, 240, 0.55);
+  border-top: 1px solid rgba(251, 248, 240, 0.1);
+  padding-top: 22px;
 }
 
 /* ---------- CTA / Footer ---------- */
@@ -814,6 +942,29 @@ footer .ftag {
 footer .fmid {
   font-size: 0.82rem;
   letter-spacing: 0.02em;
+}
+
+.fsocial {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: rgba(251, 248, 240, 0.7);
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(251, 248, 240, 0.25);
+    transition: color 0.3s, background 0.3s, border-color 0.3s;
+    color: inherit;
+}
+.social-icon:hover {
+    color: var(--cream-50);
+    background: var(--gold-500);
+    border-color: var(--gold-500);
 }
 
 /* ---------- Back to top ---------- */
@@ -890,7 +1041,14 @@ footer .fmid {
   .metric:nth-child(n + 4) {
     border-top: 1px solid rgba(251, 248, 240, 0.1);
   }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .calc-results {
+    position: static;
+  }
 }
+
 @media (max-width: 760px) {
   nav.primary-nav {
     position: fixed;
@@ -940,9 +1098,6 @@ footer .fmid {
   .process-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .process-line {
-    display: none;
-  }
   .product-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -968,7 +1123,11 @@ footer .fmid {
     flex-direction: column;
     text-align: center;
   }
+  .result-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
 @media (max-width: 480px) {
   .process-grid,
   .product-grid,
@@ -979,27 +1138,7 @@ footer .fmid {
     flex: 1 1 100%;
     padding-right: 0;
   }
-}
-
-.fsocial {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    color: rgba(251, 248, 240, 0.7);
-}
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid rgba(251, 248, 240, 0.25);
-    transition: color 0.3s, background 0.3s, border-color 0.3s;
-    color: inherit;
-}
-.social-icon:hover {
-    color: var(--cream-50);
-    background: var(--gold-500);
-    border-color: var(--gold-500);
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
 }
