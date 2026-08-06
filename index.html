@@ -1907,9 +1907,6 @@
                 Empower others. Earn more. Build a legacy that lasts. Together,
                 we grow wealth!
               </p>
-              <!-- QR placeholder -->
-
-              <!-- UPDATED: Join Affiliate Program button now triggers the modal -->
               <button
                 id="joinAffiliateBtn"
                 class="cta-btn"
@@ -1971,7 +1968,6 @@
             ></a>
             <a href="#business" class="ghost-link">Back to overview</a>
           </div>
-          <!-- Contact & Services -->
           <div
             style="
               margin-top: 48px;
@@ -2078,28 +2074,6 @@
               />
             </svg>
           </a>
-          <a
-            href="https://facebook.com/bamiinvestments"
-            aria-label="Facebook"
-            class="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </footer>
@@ -2124,13 +2098,16 @@
         <div class="modal-iframe-wrap">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScbDg49zDYvJpraHzL9lteZCeD2xjdb9NwfiTwnUVtoHjaLEA/viewform?embedded=true"
-            width="640"
-            height="2099"
+            width="100%"
+            height="100%"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
-            >Loading…</iframe
+            title="Affiliate Program Registration Form"
+            loading="lazy"
           >
+            Loading…
+          </iframe>
         </div>
         <div class="modal-fallback">
           If the form doesn&rsquo;t load,
@@ -2157,51 +2134,36 @@
 
     <script src="js/main.js"></script>
 
-    <!-- ===== MODAL JAVASCRIPT ===== -->
     <script>
       (function () {
-        const modal = document.getElementById("affiliateModal");
-        const openBtn = document.getElementById("joinAffiliateBtn");
-        const closeBtn = document.getElementById("modalClose");
+        var modal = document.getElementById("affiliateModal");
+        var openBtn = document.getElementById("joinAffiliateBtn");
+        var closeBtn = document.getElementById("modalClose");
 
-        // Open modal
         function openModal(e) {
           e.preventDefault();
           modal.classList.add("active");
           modal.setAttribute("aria-hidden", "false");
           document.body.classList.add("modal-open");
-          // Focus the close button for accessibility
           setTimeout(function () {
             closeBtn.focus();
           }, 100);
         }
 
-        // Close modal
         function closeModal() {
           modal.classList.remove("active");
           modal.setAttribute("aria-hidden", "true");
           document.body.classList.remove("modal-open");
-          // Return focus to the button that opened the modal
           openBtn.focus();
         }
 
-        // Bind events
-        if (openBtn) {
-          openBtn.addEventListener("click", openModal);
-        }
+        if (openBtn) openBtn.addEventListener("click", openModal);
+        if (closeBtn) closeBtn.addEventListener("click", closeModal);
 
-        if (closeBtn) {
-          closeBtn.addEventListener("click", closeModal);
-        }
-
-        // Close when clicking outside the modal card (on the overlay)
         modal.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            closeModal();
-          }
+          if (e.target === modal) closeModal();
         });
 
-        // Close with ESC key
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape" && modal.classList.contains("active")) {
             closeModal();

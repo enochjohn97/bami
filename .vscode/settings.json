@@ -2,7 +2,9 @@
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "wordWrapColumn",
   "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.fontSize": 16
 }
