@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BAMI Investments Limited &amp; Investment Packages</title>
+    <title>
+      BAMI Investments Limited Affiliate &amp; Investment Packages
+    </title>
     <meta
       name="description"
-      content="BAMI Investments Limited &amp; Flexible Investment Packages for oil palm and real estate."
+      content="BAMI Investments Limited Affiliate Program &amp; Flexible Investment Packages for oil palm and real estate."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +17,157 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ===== MODAL STYLES ===== -->
+    <style>
+      /* Modal Overlay */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(14, 58, 43, 0.75);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* Modal Card */
+      .modal-card {
+        background: #fbf8f0;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 680px;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+        transform: translateY(30px);
+        transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      .modal-overlay.active .modal-card {
+        transform: translateY(0);
+      }
+
+      /* Close Button */
+      .modal-close {
+        position: sticky;
+        top: 12px;
+        float: right;
+        margin-right: 12px;
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #d9d4c7;
+        background: #fbf8f0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #3d3929;
+        transition: all 0.2s ease;
+        line-height: 1;
+      }
+      .modal-close:hover {
+        background: #e9e2cc;
+        border-color: #c9a227;
+      }
+
+      /* Modal Header */
+      .modal-header {
+        padding: 28px 28px 0;
+        text-align: center;
+      }
+      .modal-header .eyebrow {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #0e3a2b;
+      }
+      .modal-header h3 {
+        font-family: "Fraunces", serif;
+        font-size: 1.5rem;
+        color: #0e3a2b;
+        margin: 6px 0 4px;
+      }
+      .modal-header p {
+        color: #5c5540;
+        font-size: 0.88rem;
+        margin: 0;
+      }
+
+      /* Iframe wrapper */
+      .modal-iframe-wrap {
+        padding: 20px 16px 28px;
+        min-height: 580px;
+      }
+      .modal-iframe-wrap iframe {
+        width: 100%;
+        height: 600px;
+        border: 1px solid #e0dbcc;
+        border-radius: 12px;
+        background: #fff;
+      }
+
+      /* Fallback link */
+      .modal-fallback {
+        text-align: center;
+        padding: 0 16px 24px;
+        font-size: 0.82rem;
+        color: #6b634b;
+      }
+      .modal-fallback a {
+        color: #0e3a2b;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      /* Prevent body scroll when modal is open */
+      body.modal-open {
+        overflow: hidden;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        .modal-card {
+          max-width: 100%;
+          border-radius: 16px;
+          max-height: 95vh;
+        }
+        .modal-header {
+          padding: 22px 18px 0;
+        }
+        .modal-header h3 {
+          font-size: 1.25rem;
+        }
+        .modal-iframe-wrap {
+          padding: 14px 8px 20px;
+          min-height: 500px;
+        }
+        .modal-iframe-wrap iframe {
+          height: 520px;
+        }
+        .modal-close {
+          width: 34px;
+          height: 34px;
+          font-size: 1rem;
+          margin-right: 8px;
+          top: 8px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header id="siteHeader">
@@ -1045,8 +1198,9 @@
                   Flexible Payment in Installments
                 </h3>
                 <p style="color: var(--ink-700); margin: 0">
-                  Own Today, Pay Comfortably! Easy deposit to start, spread your
-                  payments, no need to pay all at once. Secure your future now.
+                  Own Today, Pay Comfortably! Easy deposit to start, spread
+                  your payments, no need to pay all at once. Secure your future
+                  now.
                 </p>
               </div>
             </div>
@@ -1076,7 +1230,9 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     /></svg
-                  ><span><strong>Prime Locations</strong></span>
+                  ><span
+                    ><strong>Prime Locations</strong></span
+                  >
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1907,6 +2063,9 @@
                 Empower others. Earn more. Build a legacy that lasts. Together,
                 we grow wealth!
               </p>
+              <!-- QR placeholder -->
+
+              <!-- UPDATED: Join Affiliate Program button now triggers the modal -->
               <button
                 id="joinAffiliateBtn"
                 class="cta-btn"
@@ -1968,6 +2127,7 @@
             ></a>
             <a href="#business" class="ghost-link">Back to overview</a>
           </div>
+          <!-- Contact & Services -->
           <div
             style="
               margin-top: 48px;
@@ -2074,10 +2234,64 @@
               />
             </svg>
           </a>
+          <!-- <a
+            href="https://facebook.com/bamiinvestments"
+            aria-label="Facebook"
+            class="social-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </a> -->
         </div>
       </div>
     </footer>
 
+    <!-- ===== GOOGLE FORM MODAL FOR AFFILIATE PROGRAM ===== -->
+    <!--
+      ============================================================
+      IMPORTANT — HOW TO SET UP YOUR GOOGLE FORM:
+      ============================================================
+      1. Go to https://forms.google.com and create a new form.
+      2. Add the following questions (recommended):
+
+         a) Full Name (Short answer — REQUIRED)
+         b) Email Address (Short answer — REQUIRED)
+         c) Phone / WhatsApp Number (Short answer — REQUIRED)
+         d) Country / State of Residence (Short answer — REQUIRED)
+         e) Occupation (Short answer)
+         f) How did you hear about BAMI Investments?
+            (Multiple choice: Social Media, Friend/Family,
+             WhatsApp Group, Google Search, Event, Other)
+         g) Do you have previous affiliate / referral marketing
+            experience? (Multiple choice: Yes / No)
+         h) If yes, briefly describe your experience (Paragraph)
+         i) Why do you want to join the BAMI Affiliate Program?
+            (Paragraph)
+         j) Were you referred by an existing affiliate? If yes,
+            please enter their referral code or name (Short answer)
+         k) I agree to the affiliate program terms and conditions
+            (Checkbox — REQUIRED)
+
+      3. Once your form is ready, click "Send" → "Embed" →
+         copy the iframe src URL.
+      4. Replace the placeholder URL below with your actual
+         Google Form embed URL.
+      ============================================================
+    -->
     <div class="modal-overlay" id="affiliateModal" aria-hidden="true">
       <div class="modal-card">
         <button
@@ -2096,15 +2310,18 @@
           </p>
         </div>
         <div class="modal-iframe-wrap">
+          <!--
+            =============================================
+            REPLACE THE src URL BELOW with your actual
+            Google Form embed link.
+            Example:
+            src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+            =============================================
+          -->
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScbDg49zDYvJpraHzL9lteZCeD2xjdb9NwfiTwnUVtoHjaLEA/viewform?embedded=true"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Affiliate Program Registration Form"
-            loading="lazy"
+            src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+            title="BAMI Affiliate Program Registration Form"
+            allowfullscreen
           >
             Loading…
           </iframe>
@@ -2112,7 +2329,7 @@
         <div class="modal-fallback">
           If the form doesn&rsquo;t load,
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScbDg49zDYvJpraHzL9lteZCeD2xjdb9NwfiTwnUVtoHjaLEA/viewform?usp=publish-editor"
+            href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
             target="_blank"
             rel="noopener noreferrer"
             >click here to open it in a new tab</a
@@ -2134,38 +2351,56 @@
 
     <script src="js/main.js"></script>
 
+    <!-- ===== MODAL JAVASCRIPT ===== -->
     <script>
       (function () {
-        var modal = document.getElementById("affiliateModal");
-        var openBtn = document.getElementById("joinAffiliateBtn");
-        var closeBtn = document.getElementById("modalClose");
+        const modal = document.getElementById("affiliateModal");
+        const openBtn = document.getElementById("joinAffiliateBtn");
+        const closeBtn = document.getElementById("modalClose");
 
+        // Open modal
         function openModal(e) {
           e.preventDefault();
           modal.classList.add("active");
           modal.setAttribute("aria-hidden", "false");
           document.body.classList.add("modal-open");
+          // Focus the close button for accessibility
           setTimeout(function () {
             closeBtn.focus();
           }, 100);
         }
 
+        // Close modal
         function closeModal() {
           modal.classList.remove("active");
           modal.setAttribute("aria-hidden", "true");
           document.body.classList.remove("modal-open");
+          // Return focus to the button that opened the modal
           openBtn.focus();
         }
 
-        if (openBtn) openBtn.addEventListener("click", openModal);
-        if (closeBtn) closeBtn.addEventListener("click", closeModal);
+        // Bind events
+        if (openBtn) {
+          openBtn.addEventListener("click", openModal);
+        }
 
+        if (closeBtn) {
+          closeBtn.addEventListener("click", closeModal);
+        }
+
+        // Close when clicking outside the modal card (on the overlay)
         modal.addEventListener("click", function (e) {
-          if (e.target === modal) closeModal();
+          if (e.target === modal) {
+            closeModal();
+          }
         });
 
+        // Close with ESC key
         document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && modal.classList.contains("active")) {
+          if (
+            e.key === "Escape" &&
+            modal.classList.contains("active")
+          ) {
             closeModal();
           }
         });
