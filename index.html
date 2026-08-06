@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      BAMI Investments Limited Affiliate &amp; Investment Packages
-    </title>
+    <title>BAMI Investments Limited</title>
     <meta
       name="description"
       content="BAMI Investments Limited Affiliate Program &amp; Flexible Investment Packages for oil palm and real estate."
@@ -17,171 +15,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- ===== MODAL STYLES ===== -->
-    <style>
-      /* Modal Overlay */
-      .modal-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(14, 58, 43, 0.75);
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-      }
-      .modal-overlay.active {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      /* Modal Card */
-      .modal-card {
-        background: #fbf8f0;
-        border-radius: 20px;
-        width: 100%;
-        max-width: 680px;
-        max-height: 90vh;
-        overflow-y: auto;
-        position: relative;
-        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
-        transform: translateY(30px);
-        transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
-      .modal-overlay.active .modal-card {
-        transform: translateY(0);
-      }
-
-      /* Close Button */
-      .modal-close {
-        position: sticky;
-        top: 12px;
-        float: right;
-        margin-right: 12px;
-        z-index: 10;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid #d9d4c7;
-        background: #fbf8f0;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-        color: #3d3929;
-        transition: all 0.2s ease;
-        line-height: 1;
-      }
-      .modal-close:hover {
-        background: #e9e2cc;
-        border-color: #c9a227;
-      }
-
-      /* Modal Header */
-      .modal-header {
-        padding: 28px 28px 0;
-        text-align: center;
-      }
-      .modal-header .eyebrow {
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 0.7rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: #0e3a2b;
-      }
-      .modal-header h3 {
-        font-family: "Fraunces", serif;
-        font-size: 1.5rem;
-        color: #0e3a2b;
-        margin: 6px 0 4px;
-      }
-      .modal-header p {
-        color: #5c5540;
-        font-size: 0.88rem;
-        margin: 0;
-      }
-
-      /* Iframe wrapper */
-      .modal-iframe-wrap {
-        padding: 20px 16px 28px;
-        min-height: 580px;
-      }
-      .modal-iframe-wrap iframe {
-        width: 100%;
-        height: 600px;
-        border: 1px solid #e0dbcc;
-        border-radius: 12px;
-        background: #fff;
-      }
-
-      /* Fallback link */
-      .modal-fallback {
-        text-align: center;
-        padding: 0 16px 24px;
-        font-size: 0.82rem;
-        color: #6b634b;
-      }
-      .modal-fallback a {
-        color: #0e3a2b;
-        font-weight: 600;
-        text-decoration: underline;
-      }
-
-      /* Prevent body scroll when modal is open */
-      body.modal-open {
-        overflow: hidden;
-      }
-
-      /* Mobile */
-      @media (max-width: 600px) {
-        .modal-card {
-          max-width: 100%;
-          border-radius: 16px;
-          max-height: 95vh;
-        }
-        .modal-header {
-          padding: 22px 18px 0;
-        }
-        .modal-header h3 {
-          font-size: 1.25rem;
-        }
-        .modal-iframe-wrap {
-          padding: 14px 8px 20px;
-          min-height: 500px;
-        }
-        .modal-iframe-wrap iframe {
-          height: 520px;
-        }
-        .modal-close {
-          width: 34px;
-          height: 34px;
-          font-size: 1rem;
-          margin-right: 8px;
-          top: 8px;
-        }
-      }
-    </style>
   </head>
   <body>
     <header id="siteHeader">
       <div class="container">
         <a href="#top" class="brand">
-          <img
-            src="img/logo.jpeg"
-            alt="BAMI logo"
-            class="brand-mark"
-            style="
-              background-color: transparent !important;
-              border-radius: 20px !important;
-            "
-          />
+          <img src="img/logo.jpeg" alt="BAMI logo" class="brand-mark" />
           <span class="brand-text">
             <span class="name">BAMI</span>
             <span class="sub">Investments Limited</span>
@@ -196,10 +35,10 @@
           <a href="#packages" data-nav>Packages</a>
           <a href="#affiliate" data-nav>Affiliate</a>
           <a
+            style="color: #fff !important"
             href="https://wa.me/+2348111833482"
-            class="cta-btn"
+            class="cta-btn header-cta"
             data-nav
-            style="color: white; height: 60px"
             >Request Prospectus</a
           >
         </nav>
@@ -584,8 +423,9 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  /></svg
-                ><span>Higher oil-to-bunch ratio</span>
+                  />
+                </svg>
+                <span>Higher oil-to-bunch ratio</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none">
@@ -596,8 +436,9 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  /></svg
-                ><span>Faster growth rate</span>
+                  />
+                </svg>
+                <span>Faster growth rate</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none">
@@ -608,8 +449,9 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  /></svg
-                ><span>High yield potential</span>
+                  />
+                </svg>
+                <span>High yield potential</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none">
@@ -620,8 +462,9 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  /></svg
-                ><span>Long economic lifespan</span>
+                  />
+                </svg>
+                <span>Long economic lifespan</span>
               </li>
             </ul>
           </div>
@@ -893,7 +736,8 @@
                     max="500"
                     value="53"
                     step="1"
-                  /><span class="input-value" id="treeCountVal">53</span>
+                  />
+                  <span class="input-value" id="treeCountVal">53</span>
                 </div>
               </div>
               <div class="input-group">
@@ -906,7 +750,8 @@
                     max="25"
                     value="20"
                     step="1"
-                  /><span class="input-value" id="bunchesPerTreeVal">20</span>
+                  />
+                  <span class="input-value" id="bunchesPerTreeVal">20</span>
                 </div>
               </div>
               <div class="input-group">
@@ -919,7 +764,8 @@
                     max="30"
                     value="20"
                     step="1"
-                  /><span class="input-value" id="bunchWeightVal">20</span>
+                  />
+                  <span class="input-value" id="bunchWeightVal">20</span>
                 </div>
               </div>
               <div class="input-group">
@@ -932,7 +778,8 @@
                     max="22"
                     value="20"
                     step="0.5"
-                  /><span class="input-value" id="extractionRateVal">20</span>
+                  />
+                  <span class="input-value" id="extractionRateVal">20</span>
                 </div>
               </div>
               <div class="input-group">
@@ -945,7 +792,8 @@
                     max="75000"
                     value="55000"
                     step="1000"
-                  /><span class="input-value" id="pricePerGallonVal"
+                  />
+                  <span class="input-value" id="pricePerGallonVal"
                     >₦55,000</span
                   >
                 </div>
@@ -962,7 +810,8 @@
                     max="30000"
                     value="18000"
                     step="500"
-                  /><span class="input-value" id="costPerTreeVal">₦18,000</span>
+                  />
+                  <span class="input-value" id="costPerTreeVal">₦18,000</span>
                 </div>
               </div>
             </div>
@@ -1010,11 +859,7 @@
       </section>
 
       <!-- ===== INVESTMENT PACKAGES ===== -->
-      <section
-        class="packages pad"
-        id="packages"
-        style="background: var(--cream-100)"
-      >
+      <section class="packages pad" id="packages">
         <div class="container">
           <div class="section-head center">
             <div class="eyebrow">You Asked... We Listened!</div>
@@ -1059,8 +904,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  >5 Plots of fertile land
+                    />
+                  </svg>
+                  5 Plots of fertile land
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1071,8 +917,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  >53 healthy oil palm trees
+                    />
+                  </svg>
+                  53 healthy oil palm trees
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1083,14 +930,12 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  >Long-term wealth and passive income
+                    />
+                  </svg>
+                  Long-term wealth and passive income
                 </li>
               </ul>
-              <a
-                href="https://wa.me/+2348111833482"
-                class="cta-btn"
-                style="width: 100%; justify-content: center"
+              <a href="https://wa.me/+2348111833482" class="cta-btn invest-cta"
                 >Invest Now</a
               >
             </div>
@@ -1128,8 +973,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  >3 Plots of fertile land
+                    />
+                  </svg>
+                  3 Plots of fertile land
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1140,8 +986,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  >30 healthy oil palm trees
+                    />
+                  </svg>
+                  30 healthy oil palm trees
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1152,74 +999,40 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  >Affordable entry for smart investors
+                    />
+                  </svg>
+                  Affordable entry for smart investors
                 </li>
               </ul>
               <a
                 href="https://wa.me/+2348111833482"
-                class="cta-btn"
-                style="
-                  width: 100%;
-                  justify-content: center;
-                  background: var(--forest-700);
-                "
+                class="cta-btn invest-cta secondary-cta"
                 >Invest Now</a
               >
             </div>
           </div>
 
           <!-- Flexible Payment -->
-          <div
-            class="flexible-payment reveal"
-            style="
-              margin-top: 56px;
-              background: var(--cream-50);
-              border-radius: 20px;
-              padding: 40px 32px;
-              border: 1px solid var(--line);
-            "
-          >
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-              "
-            >
-              <div style="font-size: 2.6rem">💳</div>
-              <div style="text-align: center">
-                <div class="eyebrow" style="color: var(--forest-700)">
-                  We Offer
-                </div>
-                <h3 style="margin: 6px 0 4px; font-size: 1.5rem">
-                  Flexible Payment in Installments
-                </h3>
-                <p style="color: var(--ink-700); margin: 0">
-                  Own Today, Pay Comfortably! Easy deposit to start, spread
-                  your payments, no need to pay all at once. Secure your future
-                  now.
+          <div class="flexible-payment reveal">
+            <div class="flexible-payment-inner">
+              <div class="flexible-payment-icon">💳</div>
+              <div class="flexible-payment-content">
+                <div class="eyebrow dark-eyebrow">We Offer</div>
+                <h3>Flexible Payment in Installments</h3>
+                <p>
+                  Own Today, Pay Comfortably! Easy deposit to start, spread your
+                  payments, no need to pay all at once. Secure your future now.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Why Invest & Benefits -->
-          <div
-            class="packages-why"
-            style="
-              margin-top: 60px;
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              gap: 40px;
-            "
-          >
+          <div class="packages-why">
             <div class="reveal">
               <div class="eyebrow">Why Invest With Us</div>
-              <h3 style="margin-top: 10px">BAMI Investments Limited</h3>
-              <ul class="check-list" style="margin-top: 16px">
+              <h3 class="packages-why-heading">BAMI Investments Limited</h3>
+              <ul class="check-list">
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
                     <circle cx="12" cy="12" r="12" fill="#0E3A2B" />
@@ -1229,10 +1042,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong>Prime Locations</strong></span
-                  >
+                    />
+                  </svg>
+                  <span><strong>Prime Locations</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1243,8 +1055,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>High Return on Investment</strong></span>
+                    />
+                  </svg>
+                  <span><strong>High Return on Investment</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1255,8 +1068,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>100% Verified Documentation</strong></span>
+                    />
+                  </svg>
+                  <span><strong>100% Verified Documentation</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1267,8 +1081,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>Agricultural Wealth Creation</strong></span>
+                    />
+                  </svg>
+                  <span><strong>Agricultural Wealth Creation</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1279,8 +1094,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>Flexible Payment Options</strong></span>
+                    />
+                  </svg>
+                  <span><strong>Flexible Payment Options</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1291,8 +1107,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
+                    />
+                  </svg>
+                  <span
                     ><strong>Safe, Secure &amp; Transparent Deals</strong></span
                   >
                 </li>
@@ -1305,8 +1122,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
+                    />
+                  </svg>
+                  <span
                     ><strong
                       >A Lasting Asset for Future Generations</strong
                     ></span
@@ -1316,8 +1134,8 @@
             </div>
             <div class="reveal">
               <div class="eyebrow">Benefits of Owning</div>
-              <h3 style="margin-top: 10px">Oil Palm Land</h3>
-              <ul class="check-list" style="margin-top: 16px">
+              <h3 class="packages-why-heading">Oil Palm Land</h3>
+              <ul class="check-list">
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
                     <circle cx="12" cy="12" r="12" fill="#0E3A2B" />
@@ -1327,8 +1145,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>Continuous Harvest &amp; Income</strong></span>
+                    />
+                  </svg>
+                  <span><strong>Continuous Harvest &amp; Income</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1339,8 +1158,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>Rising Land Value</strong></span>
+                    />
+                  </svg>
+                  <span><strong>Rising Land Value</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1351,8 +1171,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>Generational Wealth</strong></span>
+                    />
+                  </svg>
+                  <span><strong>Generational Wealth</strong></span>
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
@@ -1363,8 +1184,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
+                    />
+                  </svg>
+                  <span
                     ><strong
                       >Supports Food Security &amp; Job Creation</strong
                     ></span
@@ -1379,8 +1201,9 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span><strong>A Greener, Healthier Future</strong></span>
+                    />
+                  </svg>
+                  <span><strong>A Greener, Healthier Future</strong></span>
                 </li>
               </ul>
             </div>
@@ -1389,43 +1212,15 @@
       </section>
 
       <!-- ===== AFFILIATE PROGRAM ===== -->
-      <section
-        class="affiliate pad"
-        id="affiliate"
-        style="
-          background: var(--forest-800);
-          color: var(--cream-50);
-          position: relative;
-          overflow: hidden;
-        "
-      >
-        <div
-          style="
-            position: absolute;
-            inset: 0;
-            background:
-              radial-gradient(
-                ellipse 800px 400px at 20% 0%,
-                rgba(201, 162, 39, 0.13) 0%,
-                transparent 60%
-              ),
-              radial-gradient(
-                ellipse 600px 400px at 90% 100%,
-                rgba(201, 162, 39, 0.1) 0%,
-                transparent 60%
-              );
-            pointer-events: none;
-          "
-        ></div>
-        <div class="container" style="position: relative; z-index: 2">
-          <div class="section-head center" style="max-width: 720px">
-            <div class="eyebrow" style="color: var(--gold-400)">
+      <section class="affiliate pad" id="affiliate">
+        <div class="affiliate-bg"></div>
+        <div class="container">
+          <div class="section-head center affiliate-head">
+            <div class="eyebrow affiliate-eyebrow">
               Introducing Our Affiliate Program
             </div>
-            <h2 style="color: var(--cream-50)">
-              Earn More. Empower Others. Build Legacies.
-            </h2>
-            <p style="color: rgba(251, 248, 240, 0.75)">
+            <h2>Earn More. Empower Others. Build Legacies.</h2>
+            <p>
               Join the BAMI Investments Limited Affiliate Program and earn
               exciting rewards by referring people to invest in land, real
               estate, and oil palm opportunities.
@@ -1433,489 +1228,98 @@
           </div>
 
           <!-- How It Works -->
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              gap: 18px;
-              margin-top: 40px;
-            "
-            class="stagger"
-          >
-            <div
-              class="affiliate-step reveal"
-              style="
-                background: rgba(251, 248, 240, 0.05);
-                border: 1px solid rgba(251, 248, 240, 0.1);
-                border-radius: 16px;
-                padding: 24px 18px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.2rem; margin-bottom: 12px">📝</div>
-              <div
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 0.7rem;
-                  color: var(--gold-400);
-                  letter-spacing: 0.1em;
-                  margin-bottom: 6px;
-                "
-              >
-                STEP 1
-              </div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">Register</h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.84rem;
-                  margin-top: 6px;
-                "
-              >
-                Sign up as an affiliate for free.
-              </p>
+          <div class="affiliate-steps stagger">
+            <div class="affiliate-step reveal">
+              <div class="step-icon">📝</div>
+              <div class="step-label">STEP 1</div>
+              <h4>Register</h4>
+              <p>Sign up as an affiliate for free.</p>
             </div>
-            <div
-              class="affiliate-step reveal"
-              style="
-                background: rgba(251, 248, 240, 0.05);
-                border: 1px solid rgba(251, 248, 240, 0.1);
-                border-radius: 16px;
-                padding: 24px 18px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.2rem; margin-bottom: 12px">📤</div>
-              <div
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 0.7rem;
-                  color: var(--gold-400);
-                  letter-spacing: 0.1em;
-                  margin-bottom: 6px;
-                "
-              >
-                STEP 2
-              </div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">Share</h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.84rem;
-                  margin-top: 6px;
-                "
-              >
-                Share our investment opportunities with your network.
-              </p>
+            <div class="affiliate-step reveal">
+              <div class="step-icon">📤</div>
+              <div class="step-label">STEP 2</div>
+              <h4>Share</h4>
+              <p>Share our investment opportunities with your network.</p>
             </div>
-            <div
-              class="affiliate-step reveal"
-              style="
-                background: rgba(251, 248, 240, 0.05);
-                border: 1px solid rgba(251, 248, 240, 0.1);
-                border-radius: 16px;
-                padding: 24px 18px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.2rem; margin-bottom: 12px">🤝</div>
-              <div
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 0.7rem;
-                  color: var(--gold-400);
-                  letter-spacing: 0.1em;
-                  margin-bottom: 6px;
-                "
-              >
-                STEP 3
-              </div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">
-                Referral Invest
-              </h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.84rem;
-                  margin-top: 6px;
-                "
-              >
-                When your referral makes an investment, you earn.
-              </p>
+            <div class="affiliate-step reveal">
+              <div class="step-icon">🤝</div>
+              <div class="step-label">STEP 3</div>
+              <h4>Referral Invest</h4>
+              <p>When your referral makes an investment, you earn.</p>
             </div>
-            <div
-              class="affiliate-step reveal"
-              style="
-                background: rgba(251, 248, 240, 0.05);
-                border: 1px solid rgba(251, 248, 240, 0.1);
-                border-radius: 16px;
-                padding: 24px 18px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.2rem; margin-bottom: 12px">🎁</div>
-              <div
-                style="
-                  font-family: &quot;IBM Plex Mono&quot;, monospace;
-                  font-size: 0.7rem;
-                  color: var(--gold-400);
-                  letter-spacing: 0.1em;
-                  margin-bottom: 6px;
-                "
-              >
-                STEP 4
-              </div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">
-                Earn Rewards
-              </h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.84rem;
-                  margin-top: 6px;
-                "
-              >
-                Enjoy attractive commissions and bonuses.
-              </p>
+            <div class="affiliate-step reveal">
+              <div class="step-icon">🎁</div>
+              <div class="step-label">STEP 4</div>
+              <h4>Earn Rewards</h4>
+              <p>Enjoy attractive commissions and bonuses.</p>
             </div>
           </div>
 
           <!-- Referral System -->
-          <div style="margin-top: 64px">
-            <div class="section-head center" style="max-width: 600px">
-              <div class="eyebrow" style="color: var(--gold-400)">
-                Our Referrals System
-              </div>
-              <h3
-                style="
-                  color: var(--cream-50);
-                  font-size: 1.6rem;
-                  margin-top: 6px;
-                "
-              >
-                Refer &amp; Earn
-              </h3>
+          <div class="referral-system">
+            <div class="section-head center">
+              <div class="eyebrow affiliate-eyebrow">Our Referrals System</div>
+              <h3>Refer &amp; Earn</h3>
             </div>
-            <div
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px"
-              class="stagger"
-            >
-              <div
-                class="referral-tier reveal"
-                style="
-                  background: rgba(251, 248, 240, 0.06);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 20px;
-                  padding: 32px 28px;
-                  text-align: center;
-                "
-              >
-                <div
-                  style="
-                    font-size: 2.8rem;
-                    font-weight: 700;
-                    color: var(--gold-400);
-                    font-family: &quot;Fraunces&quot;, serif;
-                  "
-                >
-                  ₦1.8M
-                </div>
-                <div
-                  style="
-                    font-size: 0.9rem;
-                    color: rgba(251, 248, 240, 0.7);
-                    margin: 8px 0 12px;
-                  "
-                >
-                  3 PLOTS + 30 OIL PALM TREES
-                </div>
-                <div
-                  style="
-                    display: inline-block;
-                    background: rgba(221, 187, 76, 0.15);
-                    padding: 6px 20px;
-                    border-radius: 999px;
-                    font-size: 0.8rem;
-                    color: var(--gold-400);
-                    font-weight: 600;
-                  "
-                >
-                  EARN UP TO ₦90,000
-                </div>
-                <div
-                  style="
-                    margin-top: 10px;
-                    font-size: 0.78rem;
-                    color: rgba(251, 248, 240, 0.5);
-                  "
-                >
-                  PER SUCCESSFUL REFERRAL
-                </div>
+            <div class="referral-grid stagger">
+              <div class="referral-tier reveal">
+                <div class="tier-amount">₦1.8M</div>
+                <div class="tier-desc">3 PLOTS + 30 OIL PALM TREES</div>
+                <div class="tier-earn">EARN UP TO ₦90,000</div>
+                <div class="tier-note">PER SUCCESSFUL REFERRAL</div>
               </div>
-              <div
-                class="referral-tier reveal"
-                style="
-                  background: rgba(251, 248, 240, 0.06);
-                  border: 2px solid var(--gold-400);
-                  border-radius: 20px;
-                  padding: 32px 28px;
-                  text-align: center;
-                  position: relative;
-                "
-              >
-                <div
-                  style="
-                    position: absolute;
-                    top: -12px;
-                    right: 20px;
-                    background: var(--gold-400);
-                    color: var(--forest-950);
-                    font-size: 0.6rem;
-                    font-weight: 700;
-                    padding: 4px 14px;
-                    border-radius: 999px;
-                    letter-spacing: 0.1em;
-                    text-transform: uppercase;
-                  "
-                >
-                  Top Tier
-                </div>
-                <div
-                  style="
-                    font-size: 2.8rem;
-                    font-weight: 700;
-                    color: var(--gold-400);
-                    font-family: &quot;Fraunces&quot;, serif;
-                  "
-                >
-                  ₦3M
-                </div>
-                <div
-                  style="
-                    font-size: 0.9rem;
-                    color: rgba(251, 248, 240, 0.7);
-                    margin: 8px 0 12px;
-                  "
-                >
-                  5 PLOTS + 53 OIL PALM TREES
-                </div>
-                <div
-                  style="
-                    display: inline-block;
-                    background: rgba(221, 187, 76, 0.15);
-                    padding: 6px 20px;
-                    border-radius: 999px;
-                    font-size: 0.8rem;
-                    color: var(--gold-400);
-                    font-weight: 600;
-                  "
-                >
-                  EARN UP TO ₦150,000
-                </div>
-                <div
-                  style="
-                    margin-top: 10px;
-                    font-size: 0.78rem;
-                    color: rgba(251, 248, 240, 0.5);
-                  "
-                >
-                  PER SUCCESSFUL REFERRAL
-                </div>
+              <div class="referral-tier reveal top-tier">
+                <div class="top-tier-badge">Top Tier</div>
+                <div class="tier-amount">₦3M</div>
+                <div class="tier-desc">5 PLOTS + 53 OIL PALM TREES</div>
+                <div class="tier-earn">EARN UP TO ₦150,000</div>
+                <div class="tier-note">PER SUCCESSFUL REFERRAL</div>
               </div>
             </div>
           </div>
 
           <!-- Who Can Join -->
-          <div style="margin-top: 64px">
-            <div class="section-head center" style="max-width: 600px">
-              <div class="eyebrow" style="color: var(--gold-400)">
-                Who Can Join?
-              </div>
-              <h3
-                style="
-                  color: var(--cream-50);
-                  font-size: 1.6rem;
-                  margin-top: 6px;
-                "
-              >
-                Everyone is Welcome
-              </h3>
+          <div class="who-can-join">
+            <div class="section-head center">
+              <div class="eyebrow affiliate-eyebrow">Who Can Join?</div>
+              <h3>Everyone is Welcome</h3>
             </div>
-            <div
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 12px;
-                justify-content: center;
-              "
-            >
-              <span
-                style="
-                  background: rgba(251, 248, 240, 0.08);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 999px;
-                  padding: 10px 24px;
-                  font-size: 0.9rem;
-                "
-                >👤 Individuals</span
-              >
-              <span
-                style="
-                  background: rgba(251, 248, 240, 0.08);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 999px;
-                  padding: 10px 24px;
-                  font-size: 0.9rem;
-                "
-                >🚀 Entrepreneurs</span
-              >
-              <span
-                style="
-                  background: rgba(251, 248, 240, 0.08);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 999px;
-                  padding: 10px 24px;
-                  font-size: 0.9rem;
-                "
-                >🏢 Real Estate Agents</span
-              >
-              <span
-                style="
-                  background: rgba(251, 248, 240, 0.08);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 999px;
-                  padding: 10px 24px;
-                  font-size: 0.9rem;
-                "
-                >💼 Business Owners</span
-              >
-              <span
-                style="
-                  background: rgba(251, 248, 240, 0.08);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 999px;
-                  padding: 10px 24px;
-                  font-size: 0.9rem;
-                "
-                >🎓 Students</span
-              >
-              <span
-                style="
-                  background: rgba(251, 248, 240, 0.08);
-                  border: 1px solid rgba(251, 248, 240, 0.12);
-                  border-radius: 999px;
-                  padding: 10px 24px;
-                  font-size: 0.9rem;
-                "
+            <div class="tags-wrapper">
+              <span class="tag">👤 Individuals</span>
+              <span class="tag">🚀 Entrepreneurs</span>
+              <span class="tag">🏢 Real Estate Agents</span>
+              <span class="tag">💼 Business Owners</span>
+              <span class="tag">🎓 Students</span>
+              <span class="tag"
                 >❤️ Anyone passionate about wealth creation!</span
               >
             </div>
           </div>
 
           <!-- Affiliate Rewards -->
-          <div
-            style="
-              margin-top: 64px;
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              gap: 18px;
-            "
-            class="stagger"
-          >
-            <div
-              class="reward-item reveal"
-              style="
-                background: rgba(251, 248, 240, 0.04);
-                border: 1px solid rgba(251, 248, 240, 0.08);
-                border-radius: 16px;
-                padding: 24px 16px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.4rem; margin-bottom: 10px">💰</div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">
-                Attractive Commissions
-              </h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.82rem;
-                  margin-top: 4px;
-                "
-              >
-                Earn generous commissions on every successful referral.
-              </p>
+          <div class="affiliate-rewards stagger">
+            <div class="reward-item reveal">
+              <div class="reward-icon">💰</div>
+              <h4>Attractive Commissions</h4>
+              <p>Earn generous commissions on every successful referral.</p>
             </div>
-            <div
-              class="reward-item reveal"
-              style="
-                background: rgba(251, 248, 240, 0.04);
-                border: 1px solid rgba(251, 248, 240, 0.08);
-                border-radius: 16px;
-                padding: 24px 16px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.4rem; margin-bottom: 10px">🏆</div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">
-                Performance Bonuses
-              </h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.82rem;
-                  margin-top: 4px;
-                "
-              >
-                Unlock bigger bonuses as you refer more investors.
-              </p>
+            <div class="reward-item reveal">
+              <div class="reward-icon">🏆</div>
+              <h4>Performance Bonuses</h4>
+              <p>Unlock bigger bonuses as you refer more investors.</p>
             </div>
-            <div
-              class="reward-item reveal"
-              style="
-                background: rgba(251, 248, 240, 0.04);
-                border: 1px solid rgba(251, 248, 240, 0.08);
-                border-radius: 16px;
-                padding: 24px 16px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.4rem; margin-bottom: 10px">⭐</div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">
-                Top Affiliate Rewards
-              </h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.82rem;
-                  margin-top: 4px;
-                "
-              >
+            <div class="reward-item reveal">
+              <div class="reward-icon">⭐</div>
+              <h4>Top Affiliate Rewards</h4>
+              <p>
                 Top performers win amazing prizes, recognition, and special
                 incentives.
               </p>
             </div>
-            <div
-              class="reward-item reveal"
-              style="
-                background: rgba(251, 248, 240, 0.04);
-                border: 1px solid rgba(251, 248, 240, 0.08);
-                border-radius: 16px;
-                padding: 24px 16px;
-                text-align: center;
-              "
-            >
-              <div style="font-size: 2.4rem; margin-bottom: 10px">🔄</div>
-              <h4 style="color: var(--cream-50); font-size: 1rem">
-                Passive Income Opportunity
-              </h4>
-              <p
-                style="
-                  color: rgba(251, 248, 240, 0.6);
-                  font-size: 0.82rem;
-                  margin-top: 4px;
-                "
-              >
+            <div class="reward-item reveal">
+              <div class="reward-icon">🔄</div>
+              <h4>Passive Income Opportunity</h4>
+              <p>
                 Build a steady source of income while helping others build
                 wealth.
               </p>
@@ -1923,23 +1327,12 @@
           </div>
 
           <!-- Why BAMI & CTA -->
-          <div
-            style="
-              margin-top: 64px;
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              gap: 40px;
-              align-items: center;
-            "
-          >
-            <div class="reveal">
-              <div class="eyebrow" style="color: var(--gold-400)">
+          <div class="affiliate-bottom">
+            <div class="reveal affiliate-why">
+              <div class="eyebrow affiliate-eyebrow">
                 Why BAMI Investments Limited?
               </div>
-              <ul
-                class="check-list"
-                style="margin-top: 16px; color: rgba(251, 248, 240, 0.8)"
-              >
+              <ul class="check-list affiliate-check-list">
                 <li>
                   <svg viewBox="0 0 24 24" fill="none">
                     <circle cx="12" cy="12" r="12" fill="#C9A227" />
@@ -1949,11 +1342,10 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong style="color: var(--cream-50)"
-                      >100% Secure &amp; Verified Documents</strong
-                    ></span
+                    />
+                  </svg>
+                  <span
+                    ><strong>100% Secure &amp; Verified Documents</strong></span
                   >
                 </li>
                 <li>
@@ -1965,11 +1357,36 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong style="color: var(--cream-50)"
-                      >Prime Locations</strong
-                    ></span
+                    />
+                  </svg>
+                  <span><strong>Prime Locations</strong></span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#C9A227" />
+                    <path
+                      d="M7 12.5l3 3 7-7"
+                      stroke="#0E3A2B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span><strong>High Return on Investment</strong></span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#C9A227" />
+                    <path
+                      d="M7 12.5l3 3 7-7"
+                      stroke="#0E3A2B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span
+                    ><strong>Oil Palm &amp; Real Estate Experts</strong></span
                   >
                 </li>
                 <li>
@@ -1981,41 +1398,10 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong style="color: var(--cream-50)"
-                      >High Return on Investment</strong
-                    ></span
-                  >
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="12" fill="#C9A227" />
-                    <path
-                      d="M7 12.5l3 3 7-7"
-                      stroke="#0E3A2B"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong style="color: var(--cream-50)"
-                      >Oil Palm &amp; Real Estate Experts</strong
-                    ></span
-                  >
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="12" fill="#C9A227" />
-                    <path
-                      d="M7 12.5l3 3 7-7"
-                      stroke="#0E3A2B"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong style="color: var(--cream-50)"
+                    />
+                  </svg>
+                  <span
+                    ><strong
                       >Trusted Partnership with Abuja Broker</strong
                     ></span
                   >
@@ -2029,59 +1415,19 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    /></svg
-                  ><span
-                    ><strong style="color: var(--cream-50)"
-                      >Dedicated Support Team</strong
-                    ></span
-                  >
+                    />
+                  </svg>
+                  <span><strong>Dedicated Support Team</strong></span>
                 </li>
               </ul>
             </div>
-            <div
-              class="reveal"
-              style="
-                background: rgba(251, 248, 240, 0.05);
-                border: 1px solid rgba(251, 248, 240, 0.12);
-                border-radius: 20px;
-                padding: 36px 32px;
-                text-align: center;
-              "
-            >
-              <div
-                style="
-                  font-size: 0.9rem;
-                  font-weight: 600;
-                  color: var(--gold-400);
-                  letter-spacing: 0.1em;
-                  text-transform: uppercase;
-                "
-              >
-                Join Now &amp; Start Earning!
-              </div>
-              <p style="color: rgba(251, 248, 240, 0.75); margin: 16px 0 24px">
+            <div class="reveal affiliate-join-box">
+              <div class="join-title">Join Now &amp; Start Earning!</div>
+              <p>
                 Empower others. Earn more. Build a legacy that lasts. Together,
                 we grow wealth!
               </p>
-              <!-- QR placeholder -->
-
-              <!-- UPDATED: Join Affiliate Program button now triggers the modal -->
-              <button
-                id="joinAffiliateBtn"
-                class="cta-btn"
-                style="
-                  background: var(--gold-500);
-                  color: var(--forest-950);
-                  box-shadow: 0 10px 24px -10px rgba(201, 162, 39, 0.6);
-                  border: none;
-                  cursor: pointer;
-                  font-family: inherit;
-                  font-size: inherit;
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 8px;
-                "
-              >
+              <button id="joinAffiliateBtn" class="cta-btn gold-btn">
                 Join Affiliate Program
                 <svg
                   width="16"
@@ -2114,7 +1460,8 @@
               href="https://wa.me/+2348111833482"
               class="cta-btn"
               id="requestBtn"
-              >Request the full prospectus
+            >
+              Request the full prospectus
               <svg
                 width="16"
                 height="16"
@@ -2123,32 +1470,14 @@
                 stroke="currentColor"
                 stroke-width="2"
               >
-                <path d="M5 12h14M13 6l6 6-6 6" /></svg
-            ></a>
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
             <a href="#business" class="ghost-link">Back to overview</a>
           </div>
           <!-- Contact & Services -->
-          <div
-            style="
-              margin-top: 48px;
-              display: flex;
-              flex-wrap: wrap;
-              gap: 30px;
-              justify-content: center;
-              border-top: 1px solid var(--line);
-              padding-top: 36px;
-            "
-          >
-            <div
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 8px 20px;
-                justify-content: center;
-                font-size: 0.82rem;
-                color: var(--ink-500);
-              "
-            >
+          <div class="closing-services">
+            <div class="services-list">
               <span>Land Sales</span><span>·</span> <span>Real Estate</span
               ><span>·</span> <span>Oil Palm Investments</span><span>·</span>
               <span>Property Development</span><span>·</span>
@@ -2163,15 +1492,7 @@
     <footer>
       <div class="container">
         <div class="fbrand">
-          <img
-            src="img/logo.jpeg"
-            alt="BAMI logo"
-            class="brand-mark"
-            style="
-              background-color: transparent !important;
-              border-radius: 20px !important;
-            "
-          />
+          <img src="img/logo.jpeg" alt="BAMI logo" class="brand-mark" />
           <span>BAMI Investments Limited</span>
         </div>
         <div class="fmid">Investment Prospectus 2026</div>
@@ -2234,64 +1555,11 @@
               />
             </svg>
           </a>
-          <!-- <a
-            href="https://facebook.com/bamiinvestments"
-            aria-label="Facebook"
-            class="social-icon"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-              />
-            </svg>
-          </a> -->
         </div>
       </div>
     </footer>
 
     <!-- ===== GOOGLE FORM MODAL FOR AFFILIATE PROGRAM ===== -->
-    <!--
-      ============================================================
-      IMPORTANT — HOW TO SET UP YOUR GOOGLE FORM:
-      ============================================================
-      1. Go to https://forms.google.com and create a new form.
-      2. Add the following questions (recommended):
-
-         a) Full Name (Short answer — REQUIRED)
-         b) Email Address (Short answer — REQUIRED)
-         c) Phone / WhatsApp Number (Short answer — REQUIRED)
-         d) Country / State of Residence (Short answer — REQUIRED)
-         e) Occupation (Short answer)
-         f) How did you hear about BAMI Investments?
-            (Multiple choice: Social Media, Friend/Family,
-             WhatsApp Group, Google Search, Event, Other)
-         g) Do you have previous affiliate / referral marketing
-            experience? (Multiple choice: Yes / No)
-         h) If yes, briefly describe your experience (Paragraph)
-         i) Why do you want to join the BAMI Affiliate Program?
-            (Paragraph)
-         j) Were you referred by an existing affiliate? If yes,
-            please enter their referral code or name (Short answer)
-         k) I agree to the affiliate program terms and conditions
-            (Checkbox — REQUIRED)
-
-      3. Once your form is ready, click "Send" → "Embed" →
-         copy the iframe src URL.
-      4. Replace the placeholder URL below with your actual
-         Google Form embed URL.
-      ============================================================
-    -->
     <div class="modal-overlay" id="affiliateModal" aria-hidden="true">
       <div class="modal-card">
         <button
@@ -2310,14 +1578,6 @@
           </p>
         </div>
         <div class="modal-iframe-wrap">
-          <!--
-            =============================================
-            REPLACE THE src URL BELOW with your actual
-            Google Form embed link.
-            Example:
-            src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
-            =============================================
-          -->
           <iframe
             src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
             title="BAMI Affiliate Program Registration Form"
@@ -2332,7 +1592,8 @@
             href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            >click here to open it in a new tab</a
+          >
+            click here to open it in a new tab </a
           >.
         </div>
       </div>
@@ -2358,28 +1619,23 @@
         const openBtn = document.getElementById("joinAffiliateBtn");
         const closeBtn = document.getElementById("modalClose");
 
-        // Open modal
         function openModal(e) {
           e.preventDefault();
           modal.classList.add("active");
           modal.setAttribute("aria-hidden", "false");
           document.body.classList.add("modal-open");
-          // Focus the close button for accessibility
           setTimeout(function () {
             closeBtn.focus();
           }, 100);
         }
 
-        // Close modal
         function closeModal() {
           modal.classList.remove("active");
           modal.setAttribute("aria-hidden", "true");
           document.body.classList.remove("modal-open");
-          // Return focus to the button that opened the modal
           openBtn.focus();
         }
 
-        // Bind events
         if (openBtn) {
           openBtn.addEventListener("click", openModal);
         }
@@ -2388,19 +1644,14 @@
           closeBtn.addEventListener("click", closeModal);
         }
 
-        // Close when clicking outside the modal card (on the overlay)
         modal.addEventListener("click", function (e) {
           if (e.target === modal) {
             closeModal();
           }
         });
 
-        // Close with ESC key
         document.addEventListener("keydown", function (e) {
-          if (
-            e.key === "Escape" &&
-            modal.classList.contains("active")
-          ) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
             closeModal();
           }
         });
